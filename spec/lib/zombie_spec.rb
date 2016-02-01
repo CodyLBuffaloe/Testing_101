@@ -12,4 +12,11 @@ describe Zombie do
         zombie = Zombie.new
         zombie.brains.should < 1
     end
+
+    xit "is hungry"do  #The x before it means this test will register as pending
+        zombie = Zombie.new
+        zombie.should be_hungry #different way to use matchers
+    end
+
+
 end
